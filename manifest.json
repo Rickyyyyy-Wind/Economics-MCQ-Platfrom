@@ -1,0 +1,22 @@
+{
+  "name": "CIE Economics MCQ Practice",
+  "short_name": "EconMCQ",
+  "description": "Cambridge International A "Cambridge International A Level Economics Paper 1 Multiple Choice Revision Platform" AS Level Economics Paper 1 Multiple Choice Revision Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
