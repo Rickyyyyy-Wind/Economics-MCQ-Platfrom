@@ -537,6 +537,10 @@ body.modal-open {
   color: var(--text-primary);
 }
 
+.auto-save-status {
+  color: var(--text-muted);
+}
+
 /* ---------- Question Card ---------- */
 .question-card {
   background: var(--bg-card);
@@ -1171,6 +1175,28 @@ body.modal-open {
   z-index: 999;
   box-shadow: var(--shadow-lg);
   animation: slideUp 250ms ease;
+}
+
+.auto-save-indicator {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  z-index: 998;
+  animation: fadeSlideUp 220ms ease;
+  pointer-events: none;
+}
+
+@keyframes fadeSlideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 @keyframes slideUp {

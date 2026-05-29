@@ -9,23 +9,19 @@
 const EXPLANATION_PLACEHOLDER = 'To be launched in the future.';
 const IMAGE_PLACEHOLDER_SRC = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 const CURRENT_CHANGELOG = {
-  version: 'v0.8',
+  version: 'v0.8.1',
   date: '2026.05.29',
   title: 'Economics MCQ Platform Updated',
   added: [
-    'Added 15 sets of A2 multiple choice practice papers.',
-    'Added AS Economics question bank with 240 Paper 1 multiple choice questions.',
-    'Added AS chapter classification from Chapter 1 to Chapter 29.',
-    'Added an Updates button so release notes can always be reopened manually.'
+    'Automatic progress saving.',
+    'Your progress is now saved instantly as you answer questions.',
+    'Progress is restored automatically when you return to the platform.'
   ],
-  fixed: [
-    'Fixed the update popup so it works offline without loading external changelog files.',
-    'Resolved several question image loading issues for a more stable browsing experience.'
-  ],
+  fixed: [],
   improved: [
-    'Improved AS question navigation, answer checking, and statistics using the same workflow as A2.',
-    'Improved the release notes popup experience on both desktop and mobile.',
-    'Refined parts of the mobile layout for a cleaner and more consistent interface.'
+    'Smoother study experience with fewer interruptions.',
+    'Reduced risk of losing progress during practice sessions.',
+    'Improved overall usability and workflow.'
   ]
 };
 
@@ -43,6 +39,7 @@ const App = {
   currentAttemptId: null,
   reviewAttemptId: null,
   hasUnsavedChanges: false,
+  saveStatusTimer: null,
 
   // Practice session state
   sessionQuestions: [],
@@ -467,13 +464,34 @@ const App = {
       sessionId: this.currentAttemptId
     });
     payload.lastSavedAt = new Date().toISOString();
-    Storage.saveActiveSession(this.currentContextKey, this.currentMode, {
+    const saved = Storage.saveActiveSession(this.currentContextKey, this.currentMode, {
       chapter: this.currentChapter,
       paperId: this.currentPaperId
     }, payload);
+    if (!saved) return false;
     this.currentAttemptId = payload.sessionId;
     this.hasUnsavedChanges = false;
     return true;
+  },
+
+  autoSaveSession(message, options = {}) {
+    if (this.sessionViewMode !== 'active') return false;
+    const saved = this.saveSession();
+    if (saved) {
+      this.updateAutoSaveStatus('All progress saved');
+      if (options.feedback !== false) this.showAutoSaveIndicator(message || 'Progress saved automatically');
+    } else if (this.currentMode && this.sessionQuestions.length > 0) {
+      this.updateAutoSaveStatus('Unable to save automatically');
+      if (options.feedback !== false) this.showAutoSaveIndicator('Unable to auto-save progress');
+    }
+    return saved;
+  },
+
+  markSessionDirty(message, options = {}) {
+    if (this.sessionViewMode !== 'active') return false;
+    this.hasUnsavedChanges = true;
+    this.updateAutoSaveStatus('Saving automatically...');
+    return this.autoSaveSession(message, options);
   },
 
   resumeSession(mode, context = {}) {
@@ -561,7 +579,7 @@ const App = {
     const isOpen = content.classList.toggle('visible');
     this.explanationOpen[questionId] = isOpen;
     this.setExplanationButtonState(button, isOpen);
-    if (this.sessionViewMode === 'active') this.hasUnsavedChanges = true;
+    this.markSessionDirty('Progress saved automatically', { feedback: false });
   },
 
   buildExplanationMarkup(questionId) {
@@ -594,10 +612,10 @@ const App = {
     this.sessionAnswers[q.id] = option;
     this.sessionResults[q.id] = isCorrect;
     this.sessionLocked[q.id] = true;
-    this.hasUnsavedChanges = true;
 
     if (!isCorrect) Storage.addWrongQuestion(q.id);
 
+    this.markSessionDirty('Progress saved automatically');
     this.updateAnswerUI(q, option, isCorrect);
     this.updateBadges();
     this.updatePracticeNav();
@@ -625,19 +643,19 @@ const App = {
   nextQuestion() {
     if (this.sessionIndex < this.sessionQuestions.length - 1) {
       this.sessionIndex++; this.renderView('practice'); window.scrollTo({ top: 0, behavior: 'smooth' });
-      if (this.sessionViewMode === 'active') this.hasUnsavedChanges = true;
+      this.markSessionDirty('All progress saved', { feedback: false });
     }
   },
   prevQuestion() {
     if (this.sessionIndex > 0) {
       this.sessionIndex--; this.renderView('practice'); window.scrollTo({ top: 0, behavior: 'smooth' });
-      if (this.sessionViewMode === 'active') this.hasUnsavedChanges = true;
+      this.markSessionDirty('All progress saved', { feedback: false });
     }
   },
   jumpToQuestion(i) {
     if (i >= 0 && i < this.sessionQuestions.length) {
       this.sessionIndex = i; this.renderView('practice'); window.scrollTo({ top: 0, behavior: 'smooth' });
-      if (this.sessionViewMode === 'active') this.hasUnsavedChanges = true;
+      this.markSessionDirty('All progress saved', { feedback: false });
     }
   },
 
@@ -680,9 +698,9 @@ const App = {
   },
 
   saveAndExit() {
-    if (this.sessionViewMode === 'active') this.saveSession();
+    if (this.sessionViewMode === 'active') this.autoSaveSession('All progress saved', { feedback: false });
     this.navigate('home');
-    this.showToast(this.sessionViewMode === 'review' ? 'Returned to dashboard.' : 'Progress saved.');
+    this.showToast(this.sessionViewMode === 'review' ? 'Returned to dashboard.' : 'All progress saved.');
   },
 
   completeAttempt() {
@@ -701,10 +719,14 @@ const App = {
       timeTaken: this.sessionStartTime ? Math.round((Date.now() - this.sessionStartTime) / 1000) : 0
     });
     attempt.progress = progress;
-    Storage.completeActiveSession(this.currentContextKey, this.currentMode, {
+    const saved = Storage.completeActiveSession(this.currentContextKey, this.currentMode, {
       chapter: this.currentChapter,
       paperId: this.currentPaperId
     }, attempt);
+    if (!saved) {
+      this.showToast('Unable to save completed attempt.');
+      return;
+    }
     this.clearSessionState();
     this.updateBadges();
     this.navigate('home');
@@ -731,6 +753,25 @@ const App = {
     const ex = document.querySelector('.toast'); if (ex) ex.remove();
     const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg;
     document.body.appendChild(t); setTimeout(() => t.remove(), dur);
+  },
+
+  updateAutoSaveStatus(message) {
+    const el = document.getElementById('autoSaveStatus');
+    if (el) el.textContent = message;
+  },
+
+  showAutoSaveIndicator(message) {
+    const existing = document.querySelector('.auto-save-indicator');
+    if (existing) existing.remove();
+    const indicator = document.createElement('div');
+    indicator.className = 'auto-save-indicator';
+    indicator.textContent = message || 'Progress saved automatically';
+    document.body.appendChild(indicator);
+    if (this.saveStatusTimer) clearTimeout(this.saveStatusTimer);
+    this.saveStatusTimer = setTimeout(() => {
+      indicator.remove();
+      this.saveStatusTimer = null;
+    }, 1600);
   }
 };
 
@@ -857,8 +898,14 @@ const Storage = {
     catch (e) { return null; }
   },
   _set(key, value) {
-    try { localStorage.setItem(this._prefix() + key, JSON.stringify(value)); }
-    catch (e) { console.warn('Storage full'); }
+    try {
+      localStorage.setItem(this._prefix() + key, JSON.stringify(value));
+      return true;
+    }
+    catch (e) {
+      console.warn('Storage full');
+      return false;
+    }
   },
 
   safeParse(raw) {
@@ -883,7 +930,7 @@ const Storage = {
   },
 
   savePracticeStore(store) {
-    this._set(this.PRACTICE_STORE_KEY, store);
+    return this._set(this.PRACTICE_STORE_KEY, store);
   },
 
   sanitizeSessionData(session, fallbackStatus) {
@@ -982,14 +1029,14 @@ const Storage = {
     record.contextId = mode === 'paper' ? context.paperId : context.chapter;
     record.activeSession = session;
     store.contexts[contextKey] = this.sanitizeContextRecord(contextKey, record);
-    this.savePracticeStore(store);
+    return this.savePracticeStore(store);
   },
 
   clearActiveSession(contextKey) {
     const store = this.getPracticeStore();
-    if (!store.contexts[contextKey]) return;
+    if (!store.contexts[contextKey]) return true;
     store.contexts[contextKey].activeSession = null;
-    this.savePracticeStore(store);
+    return this.savePracticeStore(store);
   },
 
   completeActiveSession(contextKey, mode, context, attempt) {
@@ -1001,7 +1048,7 @@ const Storage = {
     record.completedAttempts.push(attempt);
     record.activeSession = null;
     store.contexts[contextKey] = this.sanitizeContextRecord(contextKey, record);
-    this.savePracticeStore(store);
+    return this.savePracticeStore(store);
   },
 
   getCompletedAttempts(contextKey) {
@@ -1443,18 +1490,18 @@ const UIRenderer = {
     const currentRecord = App.currentContextKey ? Storage.getContextRecord(App.currentContextKey) : null;
     const lastSavedAt = currentRecord && currentRecord.activeSession ? currentRecord.activeSession.lastSavedAt : null;
     const saveMeta = App.sessionViewMode === 'active'
-      ? (App.hasUnsavedChanges ? 'Unsaved changes' : 'Last saved ' + App.getRelativeTimeLabel(lastSavedAt))
+      ? (App.hasUnsavedChanges ? 'Saving automatically...' : 'All progress saved')
       : 'Reviewing completed attempt';
 
-    return '<div class="practice-controls"><div><span class="progress-info" id="progressText">Question <strong>' + (App.sessionIndex + 1) + '</strong> of <strong>' + totalQ + '</strong> &middot; ' + answeredCount + ' answered</span><div class="card-subtitle">' + saveMeta + '</div></div>' +
+    return '<div class="practice-controls"><div><span class="progress-info" id="progressText">Question <strong>' + (App.sessionIndex + 1) + '</strong> of <strong>' + totalQ + '</strong> &middot; ' + answeredCount + ' answered</span><div class="card-subtitle auto-save-status" id="autoSaveStatus" title="Last saved ' + App.getRelativeTimeLabel(lastSavedAt) + '">' + saveMeta + '</div></div>' +
       '<div style="display:flex;align-items:center;gap:12px;"><button class="bookmark-toggle ' + (isBookmarked ? 'active' : '') + '" id="bookmarkBtn" onclick="Bookmarks.toggle(\'' + q.id + '\')">' + (isBookmarked ? '🔖' : '🔖') + '</button>' + timerHTML +
-      (App.sessionViewMode === 'active' ? '<button class="btn btn-sm btn-outline" onclick="App.saveAndExit()">💾 Save</button>' : '<button class="btn btn-sm btn-outline" onclick="App.navigate(\'home\')">← Exit Review</button>') + '</div></div>' +
+      (App.sessionViewMode === 'active' ? '<button class="btn btn-sm btn-outline" onclick="App.saveAndExit()">Exit</button>' : '<button class="btn btn-sm btn-outline" onclick="App.navigate(\'home\')">← Exit Review</button>') + '</div></div>' +
       '<div class="question-card"><div class="question-meta"><span style="font-weight:700;">Q' + q.questionNum + '</span><span style="color:var(--text-muted);">' + q.paperId + '</span>' + chapterTags + '</div>' +
       '<div class="question-stem">' + stemHTML + '</div><div class="options-list answer-choice-grid">' + optionsHTML + '</div>' + resultHTML + explanationHTML + '</div>' +
       '<div class="question-nav">' +
         '<button class="btn" id="btnPrev" onclick="App.prevQuestion()" ' + (App.sessionIndex === 0 ? 'disabled' : '') + '>← Previous</button>' +
         (App.sessionViewMode === 'active'
-          ? '<button class="btn btn-outline btn-sm" onclick="App.saveAndExit()">💾 Save</button>'
+          ? '<button class="btn btn-outline btn-sm" onclick="App.saveAndExit()">Exit</button>'
           : '<button class="btn btn-outline btn-sm" onclick="App.navigate(\'home\')">Exit Review</button>') +
         (App.sessionViewMode === 'active'
           ? (App.sessionIndex >= totalQ - 1
@@ -1673,14 +1720,14 @@ const WrongBook = {
     Storage.removeWrongQuestion(id);
     App.updateBadges();
     App.renderView('wrong-book');
-    App.showToast('Question removed from wrong list.');
+    App.showAutoSaveIndicator('Progress saved automatically');
   },
   clearAll: function() {
     if (confirm('Remove all wrong questions? This cannot be undone.')) {
       localStorage.removeItem(Storage._prefix() + 'wrong_questions');
       App.updateBadges();
       App.renderView('wrong-book');
-      App.showToast('All wrong questions cleared.');
+      App.showAutoSaveIndicator('Progress saved automatically');
     }
   }
 };
@@ -1712,6 +1759,7 @@ const Bookmarks = {
     if (Storage.isBookmarked(questionId)) { Storage.removeBookmark(questionId); }
     else { Storage.addBookmark(questionId); }
     App.updateBadges();
+    App.showAutoSaveIndicator('Progress saved automatically');
     var btn = document.getElementById('bookmarkBtn');
     if (btn) {
       var isB = Storage.isBookmarked(questionId);
@@ -1755,6 +1803,14 @@ const Search = {
 document.addEventListener('DOMContentLoaded', function() {
   var overlay = document.getElementById('sidebarOverlay');
   if (overlay) overlay.addEventListener('click', function() { App.closeSidebar(); });
+});
+
+window.addEventListener('beforeunload', function() {
+  if (App.sessionViewMode === 'active') App.saveSession();
+});
+
+document.addEventListener('visibilitychange', function() {
+  if (document.visibilityState === 'hidden' && App.sessionViewMode === 'active') App.saveSession();
 });
 
 
