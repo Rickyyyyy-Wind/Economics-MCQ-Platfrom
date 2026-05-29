@@ -8,6 +8,26 @@
 
 const EXPLANATION_PLACEHOLDER = 'To be launched in the future.';
 const IMAGE_PLACEHOLDER_SRC = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+const CURRENT_CHANGELOG = {
+  version: 'v0.8',
+  date: '2026.05.29',
+  title: 'Economics MCQ Platform Updated',
+  added: [
+    'Added 15 sets of A2 multiple choice practice papers.',
+    'Added AS Economics question bank with 240 Paper 1 multiple choice questions.',
+    'Added AS chapter classification from Chapter 1 to Chapter 29.',
+    'Added an Updates button so release notes can always be reopened manually.'
+  ],
+  fixed: [
+    'Fixed the update popup so it works offline without loading external changelog files.',
+    'Resolved several question image loading issues for a more stable browsing experience.'
+  ],
+  improved: [
+    'Improved AS question navigation, answer checking, and statistics using the same workflow as A2.',
+    'Improved the release notes popup experience on both desktop and mobile.',
+    'Refined parts of the mobile layout for a cleaner and more consistent interface.'
+  ]
+};
 
 // ========================================================
 // GLOBAL APP STATE
@@ -83,11 +103,14 @@ const App = {
       el.classList.toggle('active', el.dataset.syllabus === 'a2');
     });
     this.registerSW();
+    UpdateNotes.init();
   },
 
   registerSW() {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js').catch(() => {});
+      navigator.serviceWorker.register('./service-worker.js').catch((error) => {
+        console.error('[UpdateNotes] Service worker registration failed:', error);
+      });
     }
   },
 
@@ -711,6 +734,117 @@ const App = {
   }
 };
 
+const UpdateNotes = {
+  STORAGE_KEY: 'dismissedUpdateVersion',
+  currentData: CURRENT_CHANGELOG,
+  isOpen: false,
+
+  init() {
+    const overlay = document.getElementById('updateModalOverlay');
+    if (overlay) {
+      overlay.addEventListener('click', (event) => {
+        if (event.target === overlay) this.close();
+      });
+    }
+    const normalized = this.normalize(this.currentData);
+    if (!normalized) {
+      console.error('[UpdateNotes] CURRENT_CHANGELOG is invalid:', this.currentData);
+      return;
+    }
+    this.currentData = normalized;
+    this.render(normalized);
+    if (this.getDismissedVersion() !== normalized.version) this.open();
+  },
+
+  normalize(raw) {
+    if (!raw || typeof raw !== 'object') return null;
+    const version = typeof raw.version === 'string' ? raw.version.trim() : '';
+    const date = typeof raw.date === 'string' ? raw.date.trim() : '';
+    const title = typeof raw.title === 'string' ? raw.title.trim() : '';
+    if (!version || !date || !title) return null;
+
+    const sanitizeList = (value) => Array.isArray(value)
+      ? value.filter((item) => typeof item === 'string' && item.trim()).map((item) => item.trim())
+      : [];
+
+    return {
+      version: version,
+      date: date,
+      title: title,
+      added: sanitizeList(raw.added),
+      fixed: sanitizeList(raw.fixed),
+      improved: sanitizeList(raw.improved)
+    };
+  },
+
+  buildSection(label, items) {
+    if (!items.length) return '';
+    return '<div class="update-section">' +
+      '<div class="update-section-label">' + label + '</div>' +
+      '<ul class="update-section-list">' + items.map((item) => '<li>' + item + '</li>').join('') + '</ul>' +
+      '</div>';
+  },
+
+  render(data) {
+    const versionEl = document.getElementById('updateModalVersion');
+    const titleEl = document.getElementById('updateModalTitle');
+    const bodyEl = document.getElementById('updateModalBody');
+    if (!versionEl || !titleEl || !bodyEl) return;
+
+    versionEl.textContent = data.date + ' · ' + data.version;
+    titleEl.textContent = data.title;
+    bodyEl.innerHTML =
+      this.buildSection('Added', data.added) +
+      this.buildSection('Fixed', data.fixed) +
+      this.buildSection('Improved', data.improved);
+  },
+
+  openManual() {
+    if (!this.currentData) return;
+    this.open();
+  },
+
+  open() {
+    if (!this.currentData) return;
+    const overlay = document.getElementById('updateModalOverlay');
+    if (!overlay) return;
+    overlay.classList.remove('hidden');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    this.isOpen = true;
+  },
+
+  close() {
+    const overlay = document.getElementById('updateModalOverlay');
+    if (!overlay) return;
+    overlay.classList.add('hidden');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    this.isOpen = false;
+  },
+
+  dismissCurrentVersion() {
+    if (this.currentData && this.currentData.version) {
+      try {
+        localStorage.setItem(this.STORAGE_KEY, this.currentData.version);
+      } catch (error) {
+        console.error('[UpdateNotes] Failed to save dismissed version:', error);
+      }
+    }
+    this.close();
+  },
+
+  getDismissedVersion() {
+    try {
+      return localStorage.getItem(this.STORAGE_KEY) || '';
+    } catch (error) {
+      return '';
+    }
+  }
+};
+
+window.UpdateNotes = UpdateNotes;
+
 // ========================================================
 // STORAGE LAYER - All user data in localStorage
 // ========================================================
@@ -1189,11 +1323,22 @@ const UIRenderer = {
       const qc = QuestionBank.getByChapters(ch).length;
       const summary = App.getContextStatus('chapter', { chapter: ch });
       const borderColor = summary.state === 'in_progress' ? 'var(--accent)' : (summary.state === 'completed' ? 'var(--border-correct)' : 'var(--border-light)');
+      if (qc === 0) {
+        cards += '<div class="card card-disabled" style="border-left:3px solid var(--border-light)">' +
+          '<div class="card-header"><span class="card-title">Chapter ' + ch + ': ' + label + '</span></div>' +
+          '<div class="card-subtitle">No questions added yet</div>' +
+          '</div>';
+        continue;
+      }
+      const answered = summary.state === 'in_progress'
+        ? summary.activeSession.progress.answered
+        : (summary.state === 'completed' ? summary.latestCompleted.progress.answered : 0);
+      const progressPct = Math.round(((answered || 0) / qc) * 100);
       cards += '<div class="card" onclick="ChapterMode.launch(' + ch + ')" style="border-left:3px solid ' + borderColor + '">' +
         '<div class="card-header"><span class="card-title">Chapter ' + ch + ': ' + label + '</span></div>' +
         '<div class="card-subtitle">' + qc + ' questions available</div>' +
         this.renderContextSummary('chapter', ch, summary, qc) +
-        '<div class="progress-bar"><div class="progress-fill" style="width:' + (summary.state === 'not_started' ? 0 : Math.round((((summary.state === 'in_progress' ? summary.activeSession.progress.answered : summary.latestCompleted.progress.answered) || 0) / qc) * 100)) + '%"></div></div>' +
+        '<div class="progress-bar"><div class="progress-fill" style="width:' + (summary.state === 'not_started' ? 0 : progressPct) + '%"></div></div>' +
         this.renderContextCardActions('chapter', ch, summary) +
         '</div>';
     }
@@ -1617,6 +1762,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // KEYBOARD SHORTCUTS
 // ========================================================
 document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && UpdateNotes.isOpen) {
+    UpdateNotes.close();
+    return;
+  }
   if (App.currentView !== 'practice') return;
   var q = App.getCurrentQuestion();
   if (!q) return;

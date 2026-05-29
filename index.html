@@ -36,7 +36,6 @@
         </button>
         <button class="sidebar-link" data-syllabus="as" id="navSyllabusAS" onclick="App.setSyllabus('as')">
           <span class="icon">&#x1F4D8;</span> AS Economics
-          <span class="badge badge-coming" id="asComingBadge">Soon</span>
         </button>
 
         <div class="sidebar-section-label">Main</div>
@@ -76,6 +75,7 @@
 
       <div class="sidebar-footer">
         <div class="sidebar-footer-actions">
+          <button onclick="UpdateNotes.openManual()" title="View update notes">Updates</button>
           <button onclick="App.toggleDarkMode()" title="Toggle dark mode">&#x1F319;</button>
           <button onclick="App.navigate('settings')" title="Settings">&#x2699;</button>
         </div>
@@ -97,6 +97,20 @@
     </main>
   </div>
 
+  <div class="update-modal-overlay hidden" id="updateModalOverlay" aria-hidden="true">
+    <div class="update-modal" role="dialog" aria-modal="true" aria-labelledby="updateModalVersion">
+      <button class="update-modal-close" type="button" aria-label="Close update notes" onclick="UpdateNotes.close()">&times;</button>
+      <div class="update-modal-kicker">What&rsquo;s New</div>
+      <h2 class="update-modal-version" id="updateModalVersion"></h2>
+      <p class="update-modal-title" id="updateModalTitle"></p>
+      <div class="update-modal-body" id="updateModalBody"></div>
+      <div class="update-modal-actions">
+        <button class="btn" type="button" onclick="UpdateNotes.close()">Later</button>
+        <button class="btn btn-primary" type="button" onclick="UpdateNotes.dismissCurrentVersion()">Do not show again for this version</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Data Layer (must load before app) -->
   <script src="data/questions.js"></script>
 
@@ -106,7 +120,7 @@
   <script>
     window.SYLLABUS_CONFIG = {
       a2: { label: "A2 Economics", active: true },
-      as: { label: "AS Economics", active: false, comingSoon: true }
+      as: { label: "AS Economics", active: true, comingSoon: false }
     };
   </script>
 
