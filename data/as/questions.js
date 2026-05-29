@@ -1,7 +1,7 @@
 // AS Economics Question Data Bundle
 // Cambridge AS Level Economics Paper 1 MCQ Data
 // Generated from local QP/MS PDFs; fully static/offline data
-// Total questions: 240
+// Total questions: 418
 
 var AS_QUESTION_DATA = [
   {
@@ -8916,6 +8916,6619 @@ var AS_QUESTION_DATA = [
       "needsReview": false
     },
     "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q01",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 1,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q01.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      3
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 7,
+      "evidence": [
+        "land",
+        "labour",
+        "capital",
+        "enterprise"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q02",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 2,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      169.92,
+      554,
+      323.67
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q02.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      1
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "opportunity cost"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q03",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 3,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      324.67,
+      554,
+      641.03
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q03.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      5
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "production possibility",
+        "production possibility curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q04",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 4,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      192.74
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q04.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      3
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 7,
+      "evidence": [
+        "labour",
+        "division of labour",
+        "productivity"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q05",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 5,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      193.74,
+      554,
+      364.7
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q05.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "cross elasticity",
+        "elasticity of demand"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q06",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 6,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      365.7,
+      554,
+      483.67
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q06.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      1,
+      11
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "opportunity cost"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q07",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 7,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      484.67,
+      554,
+      597.91
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q07.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "supply of",
+        "quantity supplied"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q08",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 8,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      333.55
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q08.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7,
+      11
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "demand for"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q09",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 9,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      334.55,
+      554,
+      473.13
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q09.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "demand for",
+        "quantity demanded"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q10",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 10,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      370.85
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q10.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "supply of"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q11",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 11,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      371.85,
+      554,
+      684.43
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q11.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7,
+      10
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q12",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 12,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      314.41
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q12.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7,
+      13
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q13",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 13,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      315.41,
+      554,
+      477.87
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q13.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "demand for",
+        "supply of"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q14",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 14,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      382.76
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q14.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      10
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "equilibrium quantity",
+        "market equilibrium",
+        "demand and supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q15",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 15,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      383.76,
+      554,
+      513.58
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q15.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      1,
+      16
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "opportunity cost"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q16",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 16,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      514.58,
+      554,
+      734
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q16.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      14
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q17",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 17,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.98
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q17.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      20
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q18",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 18,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      169.98,
+      554,
+      287.95
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q18.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "demand curve",
+        "demand for"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q19",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 19,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      288.95,
+      554,
+      585.61
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q19.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      13
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "indirect tax"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q20",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 20,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      405.28
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q20.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      8,
+      19
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "yed"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q21",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 21,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      406.28,
+      554,
+      684.71
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q21.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 6,
+      "evidence": [
+        "gdp",
+        "real gdp"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q23",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 23,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      278.51,
+      554,
+      649.49
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q23.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      5
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "production possibility",
+        "production possibility curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q24",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 24,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      192.74
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q24.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      25
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "terms of trade"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q25",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 25,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      193.74,
+      554,
+      347.49
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q25.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      28
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 10,
+      "evidence": [
+        "exchange rate",
+        "floating exchange",
+        "currency"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q26",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 26,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      348.49,
+      554,
+      466.51
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q26.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      13,
+      23
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "subsidy",
+        "quota"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q27",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 27,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      467.51,
+      554,
+      585.53
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q27.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      24
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "supply-side policy"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q28",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 28,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      586.53,
+      554,
+      725.18
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q28.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      22
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 10,
+      "evidence": [
+        "government spending",
+        "taxation",
+        "national debt"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P11_Q29",
+    "paperId": "2023_SJ_P11",
+    "questionNum": 29,
+    "sourcePdf": "9708_s23_qp_11.pdf",
+    "sourceMarkScheme": "9708_s23_ms_11.pdf",
+    "page": 12,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      272.26
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P11/2023_SJ_P11_Q29.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      16,
+      17
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "exports",
+        "imports"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q01",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 1,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q01.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      3
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 11,
+      "evidence": [
+        "factor of production",
+        "land",
+        "labour",
+        "capital",
+        "enterprise"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q02",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 2,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      169.92,
+      554,
+      299.91
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q02.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      5
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "production possibility",
+        "production possibility curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q03",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 3,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      300.91,
+      554,
+      418.93
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q03.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      4
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "mixed economy",
+        "private sector"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q04",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 4,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      419.93,
+      554,
+      537.9
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q04.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      3
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 7,
+      "evidence": [
+        "labour",
+        "division of labour",
+        "productivity"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q05",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 5,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      538.9,
+      554,
+      713.27
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q05.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      4
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q06",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 6,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q06.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q07",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 7,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      169.92,
+      554,
+      503.93
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q07.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      10
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 6,
+      "evidence": [
+        "shortage"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q08",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 8,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      504.93,
+      554,
+      720.21
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q08.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "cross elasticity",
+        "elasticity of demand"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q09",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 9,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      232.3
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q09.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 0,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q10",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 10,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      233.3,
+      554,
+      511.73
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q10.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q11",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 11,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      333.49
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q11.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      9
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 18,
+      "evidence": [
+        "price elasticity of supply",
+        "pes",
+        "elasticity of supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q12",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 12,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      334.49,
+      554,
+      632.11
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q12.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      10
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 0,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q13",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 13,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      216.5
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q13.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "demand for",
+        "supply of"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q14",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 14,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      217.5,
+      554,
+      521.67
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q14.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "price elasticity of demand",
+        "elasticity of demand",
+        "price elastic"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q15",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 15,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      389.14
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q15.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "income elasticity",
+        "elasticity of demand"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q16",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 16,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      390.14,
+      554,
+      540.69
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q16.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      13
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 28,
+      "evidence": [
+        "indirect tax",
+        "subsidy",
+        "maximum price",
+        "minimum price"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q17",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 17,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      315.66
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q17.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "current account",
+        "balance of payments",
+        "trade in goods",
+        "trade in services",
+        "current account deficit"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q18",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 18,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      316.66,
+      554,
+      434.68
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q18.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      17
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "aggregate demand",
+        "aggregate supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q19",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 19,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      435.68,
+      554,
+      553.7
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q19.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      16,
+      17
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "saving",
+        "imports"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q20",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 20,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      554.7,
+      554,
+      693.35
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q20.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "gdp",
+        "real gdp",
+        "nominal gdp"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q21",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 21,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      300.59
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q21.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      16
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "circular flow"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q22",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 22,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      301.59,
+      554,
+      484.34
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q22.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      19
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 10,
+      "evidence": [
+        "unemployment",
+        "employment",
+        "frictional"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q23",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 23,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      485.34,
+      554,
+      676.86
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q23.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "current account",
+        "balance of payments",
+        "current account surplus"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q24",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 24,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      223.27
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q24.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      20
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q25",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 25,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      224.27,
+      554,
+      347.26
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q25.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      28
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 6,
+      "evidence": [
+        "exchange rate",
+        "appreciation"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q26",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 26,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      348.26,
+      554,
+      724.16
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q26.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      5
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "production possibility",
+        "production possibility curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q27",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 27,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      380.78
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q27.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      16,
+      20
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "investment"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q28",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 28,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      381.78,
+      554,
+      535.53
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q28.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "current account",
+        "secondary income"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q29",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 29,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      536.53,
+      554,
+      698.99
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q29.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      3,
+      20
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "labour",
+        "productivity"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P12_Q30",
+    "paperId": "2023_SJ_P12",
+    "questionNum": 30,
+    "sourcePdf": "9708_s23_qp_12.pdf",
+    "sourceMarkScheme": "9708_s23_ms_12.pdf",
+    "page": 12,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      225.26
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P12/2023_SJ_P12_Q30.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      14,
+      18
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "progressive tax"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q01",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 1,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      216.5
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q01.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      6
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "public good"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q02",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 2,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      217.5,
+      554,
+      371.25
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q02.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      1
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "opportunity cost"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q03",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 3,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      372.25,
+      554,
+      714.62
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q03.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      5
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "production possibility",
+        "production possibility curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q04",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 4,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      209.95
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q04.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      19,
+      23
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "unemployment",
+        "employment"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q05",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 5,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      210.95,
+      554,
+      328.98
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q05.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "price elasticity of demand",
+        "elasticity of demand",
+        "price elastic"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q06",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 6,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      329.98,
+      554,
+      447.94
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q06.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q07",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 7,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      448.94,
+      554,
+      664.28
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q07.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "quantity demanded",
+        "quantity supplied"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q08",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 8,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.98
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q08.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "demand curve",
+        "substitute",
+        "complement"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q09",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 9,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      169.98,
+      554,
+      287.95
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q09.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q10",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 10,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      288.95,
+      554,
+      430.79
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q10.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "price elasticity of demand",
+        "elasticity of demand",
+        "price elastic"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q11",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 11,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      431.79,
+      554,
+      702.83
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q11.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "income elasticity",
+        "elasticity of demand"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q12",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 12,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      339.13
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q12.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q13",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 13,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      340.13,
+      554,
+      481.97
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q13.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      9
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "price elasticity of supply",
+        "pes",
+        "elasticity of supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q14",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 14,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      482.97,
+      554,
+      734
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q14.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      8,
+      13
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "price elasticity of demand",
+        "elasticity of demand",
+        "price elastic"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q15",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 15,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      333.21
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q15.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      6
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "merit good",
+        "demerit good"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q16",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 16,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      334.21,
+      554,
+      543.66
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q16.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      12,
+      14
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "income inequality"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q17",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 17,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      544.66,
+      554,
+      719.02
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q17.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "balance of payments",
+        "trade in services",
+        "primary income",
+        "secondary income"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q18",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 18,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      214.3
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q18.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 14,
+      "evidence": [
+        "gdp",
+        "gross domestic product",
+        "real gdp"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q19",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 19,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      215.3,
+      554,
+      345.17
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q19.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "current account",
+        "balance of payments"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q20",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 20,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      346.17,
+      554,
+      438.8
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q20.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 18,
+      "evidence": [
+        "gdp",
+        "real gdp",
+        "nominal gdp"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q21",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 21,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      439.8,
+      554,
+      691.71
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q21.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "national income",
+        "net national income",
+        "national income statistics"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q22",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 22,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      295.85
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q22.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      16
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "exports",
+        "imports"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q23",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 23,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      296.85,
+      554,
+      589.48
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q23.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      1
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "opportunity cost"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q24",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 24,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      590.48,
+      554,
+      730.93
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q24.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      18,
+      26
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "economic growth"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q25",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 25,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q25.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      28
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 6,
+      "evidence": [
+        "exchange rate",
+        "depreciation"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q26",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 26,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      169.92,
+      554,
+      502.97
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q26.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      17,
+      23
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "macroeconomic equilibrium"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q27",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 27,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      503.97,
+      554,
+      666.43
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q27.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "current account",
+        "current account surplus"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q28",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 28,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      419.72
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q28.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      17
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "aggregate demand",
+        "aggregate supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q29",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 29,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      420.72,
+      554,
+      710.84
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q29.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      26
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "tariff"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_SJ_P13_Q30",
+    "paperId": "2023_SJ_P13",
+    "questionNum": 30,
+    "sourcePdf": "9708_s23_qp_13.pdf",
+    "sourceMarkScheme": "9708_s23_ms_13.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      189.54
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_SJ_P13/2023_SJ_P13_Q30.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      13,
+      22
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "indirect tax"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q01",
+    "paperId": "2023_ON_P11",
+    "questionNum": 1,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q01.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      1
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "economic problem",
+        "basic economic problem",
+        "allocation of scarce resources"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q02",
+    "paperId": "2023_ON_P11",
+    "questionNum": 2,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      169.92,
+      554,
+      411.77
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q02.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      1
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "opportunity cost"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q03",
+    "paperId": "2023_ON_P11",
+    "questionNum": 3,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      412.77,
+      554,
+      554.61
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q03.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      6
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "public good",
+        "private good",
+        "free good",
+        "merit good",
+        "demerit good"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q04",
+    "paperId": "2023_ON_P11",
+    "questionNum": 4,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      555.61,
+      554,
+      706.16
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q04.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      4
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 10,
+      "evidence": [
+        "free market economy",
+        "market economy",
+        "transition"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q05",
+    "paperId": "2023_ON_P11",
+    "questionNum": 5,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      180.83
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q05.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "demand curve",
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q06",
+    "paperId": "2023_ON_P11",
+    "questionNum": 6,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      181.83,
+      554,
+      537.96
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q06.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "price elasticity of demand",
+        "ped",
+        "elasticity of demand",
+        "price elastic"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q07",
+    "paperId": "2023_ON_P11",
+    "questionNum": 7,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      538.96,
+      554,
+      701.41
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q07.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      13
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "minimum price"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q08",
+    "paperId": "2023_ON_P11",
+    "questionNum": 8,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      244.21
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q08.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "cross elasticity",
+        "elasticity of demand"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q09",
+    "paperId": "2023_ON_P11",
+    "questionNum": 9,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      245.21,
+      554,
+      373.5
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q09.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      9
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "price elasticity of supply",
+        "elasticity of supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q10",
+    "paperId": "2023_ON_P11",
+    "questionNum": 10,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      374.5,
+      554,
+      734
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q10.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "demand curve",
+        "demand for"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q11",
+    "paperId": "2023_ON_P11",
+    "questionNum": 11,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      362.16
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q11.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "quantity demanded"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q12",
+    "paperId": "2023_ON_P11",
+    "questionNum": 12,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      363.16,
+      554,
+      513.71
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q12.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      13
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "buffer stock"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q13",
+    "paperId": "2023_ON_P11",
+    "questionNum": 13,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      382.08
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q13.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 14,
+      "evidence": [
+        "demand curve",
+        "supply curve",
+        "demand for",
+        "substitute"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q14",
+    "paperId": "2023_ON_P11",
+    "questionNum": 14,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      383.08,
+      554,
+      545.54
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q14.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      6
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "public good",
+        "merit good",
+        "rival",
+        "excludable"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q15",
+    "paperId": "2023_ON_P11",
+    "questionNum": 15,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      403.02
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q15.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      16,
+      22
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "taxation"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q16",
+    "paperId": "2023_ON_P11",
+    "questionNum": 16,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      404.02,
+      554,
+      675.28
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q16.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      17
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "aggregate demand"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q17",
+    "paperId": "2023_ON_P11",
+    "questionNum": 17,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q17.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "national income"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q18",
+    "paperId": "2023_ON_P11",
+    "questionNum": 18,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      169.92,
+      554,
+      375.14
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q18.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      19
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q19",
+    "paperId": "2023_ON_P11",
+    "questionNum": 19,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      376.14,
+      554,
+      514.78
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q19.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      20
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 6,
+      "evidence": [
+        "cpi",
+        "consumer prices index"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q20",
+    "paperId": "2023_ON_P11",
+    "questionNum": 20,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      409.96
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q20.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      5
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 10,
+      "evidence": [
+        "production possibility",
+        "ppc",
+        "production possibility curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q21",
+    "paperId": "2023_ON_P11",
+    "questionNum": 21,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      410.96,
+      554,
+      540.95
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q21.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      17
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "aggregate demand",
+        "aggregate supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q22",
+    "paperId": "2023_ON_P11",
+    "questionNum": 22,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      541.95,
+      554,
+      680.53
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q22.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "current account",
+        "balance of payments"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q23",
+    "paperId": "2023_ON_P11",
+    "questionNum": 23,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      235.18
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q23.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "gdp"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q24",
+    "paperId": "2023_ON_P11",
+    "questionNum": 24,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      236.18,
+      554,
+      401.83
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q24.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      16
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 24,
+      "evidence": [
+        "injection",
+        "leakage",
+        "saving",
+        "investment",
+        "exports"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q25",
+    "paperId": "2023_ON_P11",
+    "questionNum": 25,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      402.83,
+      554,
+      520.8
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q25.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      19
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 6,
+      "evidence": [
+        "unemployment",
+        "employment",
+        "frictional"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q26",
+    "paperId": "2023_ON_P11",
+    "questionNum": 26,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      521.8,
+      554,
+      696.17
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q26.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 24,
+      "evidence": [
+        "current account",
+        "trade in services",
+        "primary income",
+        "secondary income",
+        "current account surplus"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q27",
+    "paperId": "2023_ON_P11",
+    "questionNum": 27,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      192.74
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q27.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "standard of living"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q28",
+    "paperId": "2023_ON_P11",
+    "questionNum": 28,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      193.74,
+      554,
+      466.96
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q28.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      22
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 0,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q29",
+    "paperId": "2023_ON_P11",
+    "questionNum": 29,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      467.96,
+      554,
+      634.26
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q29.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      23
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "interest rate",
+        "money supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P11_Q30",
+    "paperId": "2023_ON_P11",
+    "questionNum": 30,
+    "sourcePdf": "9708_w23_qp_11.pdf",
+    "sourceMarkScheme": "9708_w23_ms_11.pdf",
+    "page": 12,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      225.32
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P11/2023_ON_P11_Q30.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      20
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q01",
+    "paperId": "2023_ON_P12",
+    "questionNum": 1,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      353.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q01.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      1
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "opportunity cost"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q02",
+    "paperId": "2023_ON_P12",
+    "questionNum": 2,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      354.92,
+      554,
+      472.89
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q02.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      3
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q03",
+    "paperId": "2023_ON_P12",
+    "questionNum": 3,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      473.89,
+      554,
+      636.35
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q03.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      6
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "public good",
+        "private good",
+        "free good",
+        "merit good",
+        "demerit good"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q04",
+    "paperId": "2023_ON_P12",
+    "questionNum": 4,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      192.74
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q04.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      23
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "money supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q05",
+    "paperId": "2023_ON_P12",
+    "questionNum": 5,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      193.74,
+      554,
+      335.58
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q05.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 0,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q06",
+    "paperId": "2023_ON_P12",
+    "questionNum": 6,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      336.58,
+      554,
+      478.36
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q06.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      10,
+      11
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "excess supply",
+        "surplus"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q07",
+    "paperId": "2023_ON_P12",
+    "questionNum": 7,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      479.36,
+      554,
+      583.9
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q07.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      11
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "consumer surplus"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q08",
+    "paperId": "2023_ON_P12",
+    "questionNum": 8,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      584.9,
+      554,
+      698.14
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q08.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7,
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "demand for"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q09",
+    "paperId": "2023_ON_P12",
+    "questionNum": 9,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      232.3
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q09.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q10",
+    "paperId": "2023_ON_P12",
+    "questionNum": 10,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      233.3,
+      554,
+      543.05
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q10.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 10,
+      "evidence": [
+        "demand for",
+        "supply of",
+        "complement"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q11",
+    "paperId": "2023_ON_P12",
+    "questionNum": 11,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      504.66
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q11.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "demand for",
+        "supply of"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q12",
+    "paperId": "2023_ON_P12",
+    "questionNum": 12,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      505.66,
+      554,
+      715.69
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q12.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      10
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "shortage",
+        "surplus"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q13",
+    "paperId": "2023_ON_P12",
+    "questionNum": 13,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      180.89
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q13.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      9
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "inelastic supply",
+        "elastic supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q14",
+    "paperId": "2023_ON_P12",
+    "questionNum": 14,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      181.89,
+      554,
+      299.91
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q14.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      13,
+      14
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "specific tax"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q15",
+    "paperId": "2023_ON_P12",
+    "questionNum": 15,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      300.91,
+      554,
+      418.88
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q15.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      14
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "transfer payment"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q16",
+    "paperId": "2023_ON_P12",
+    "questionNum": 16,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      419.88,
+      554,
+      561.77
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q16.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "demand curve",
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q17",
+    "paperId": "2023_ON_P12",
+    "questionNum": 17,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      562.77,
+      554,
+      701.36
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q17.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      28
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 6,
+      "evidence": [
+        "appreciation",
+        "depreciation",
+        "currency"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q18",
+    "paperId": "2023_ON_P12",
+    "questionNum": 18,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q18.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      25,
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "terms of trade"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q19",
+    "paperId": "2023_ON_P12",
+    "questionNum": 19,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      169.92,
+      554,
+      311.76
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q19.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      25
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "comparative advantage",
+        "absolute advantage",
+        "terms of trade"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q20",
+    "paperId": "2023_ON_P12",
+    "questionNum": 20,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      312.76,
+      554,
+      521.48
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q20.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 10,
+      "evidence": [
+        "national income",
+        "gdp",
+        "gross domestic product"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q21",
+    "paperId": "2023_ON_P12",
+    "questionNum": 21,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      522.48,
+      554,
+      702.09
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q21.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      20
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q22",
+    "paperId": "2023_ON_P12",
+    "questionNum": 22,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      403.08
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q22.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      20
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 6,
+      "evidence": [
+        "inflation",
+        "disinflation"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q23",
+    "paperId": "2023_ON_P12",
+    "questionNum": 23,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      404.08,
+      554,
+      734
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q23.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      5
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "production possibility",
+        "ppc",
+        "production possibility curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q24",
+    "paperId": "2023_ON_P12",
+    "questionNum": 24,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      204.65
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q24.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "demand curve",
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q25",
+    "paperId": "2023_ON_P12",
+    "questionNum": 25,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      205.65,
+      554,
+      347.43
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q25.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "current account",
+        "current account deficit"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q26",
+    "paperId": "2023_ON_P12",
+    "questionNum": 26,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      348.43,
+      554,
+      478.42
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q26.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      24
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 6,
+      "evidence": [
+        "supply side",
+        "privatisation"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q27",
+    "paperId": "2023_ON_P12",
+    "questionNum": 27,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      479.42,
+      554,
+      618
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q27.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      13
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "indirect tax"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q28",
+    "paperId": "2023_ON_P12",
+    "questionNum": 28,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      233.71
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q28.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 28,
+      "evidence": [
+        "current account",
+        "balance of payments",
+        "trade in services",
+        "secondary income"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q29",
+    "paperId": "2023_ON_P12",
+    "questionNum": 29,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      234.71,
+      554,
+      483.16
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q29.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      17
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "aggregate demand",
+        "ad curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P12_Q30",
+    "paperId": "2023_ON_P12",
+    "questionNum": 30,
+    "sourcePdf": "9708_w23_qp_12.pdf",
+    "sourceMarkScheme": "9708_w23_ms_12.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      484.16,
+      554,
+      674.21
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P12/2023_ON_P12_Q30.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      22
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q01",
+    "paperId": "2023_ON_P13",
+    "questionNum": 1,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      192.74
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q01.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      3
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 7,
+      "evidence": [
+        "labour",
+        "division of labour",
+        "productivity"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q02",
+    "paperId": "2023_ON_P13",
+    "questionNum": 2,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      193.74,
+      554,
+      347.43
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q02.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      6
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "public good",
+        "free good",
+        "merit good",
+        "demerit good"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q03",
+    "paperId": "2023_ON_P13",
+    "questionNum": 3,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 2,
+    "bboxPdf": [
+      58,
+      348.43,
+      554,
+      652.94
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q03.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      1
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "opportunity cost"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q04",
+    "paperId": "2023_ON_P13",
+    "questionNum": 4,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q04.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      6
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "free good"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q05",
+    "paperId": "2023_ON_P13",
+    "questionNum": 5,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      169.92,
+      554,
+      520.74
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q05.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      11
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "consumer surplus"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q06",
+    "paperId": "2023_ON_P13",
+    "questionNum": 6,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 3,
+    "bboxPdf": [
+      58,
+      521.74,
+      554,
+      684.2
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q06.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "supply curve",
+        "quantity supplied"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q07",
+    "paperId": "2023_ON_P13",
+    "questionNum": 7,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      221.8
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q07.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 24,
+      "evidence": [
+        "demand curve",
+        "demand for",
+        "normal good",
+        "inferior good"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q08",
+    "paperId": "2023_ON_P13",
+    "questionNum": 8,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      222.8,
+      554,
+      404.15
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q08.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q09",
+    "paperId": "2023_ON_P13",
+    "questionNum": 9,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 4,
+    "bboxPdf": [
+      58,
+      405.15,
+      554,
+      631.66
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q09.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 16,
+      "evidence": [
+        "demand curve",
+        "movement along"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q10",
+    "paperId": "2023_ON_P13",
+    "questionNum": 10,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      269.38
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q10.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "price elasticity of demand",
+        "elasticity of demand",
+        "price elastic"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q11",
+    "paperId": "2023_ON_P13",
+    "questionNum": 11,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      270.38,
+      554,
+      363
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q11.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      9
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "price elasticity of supply",
+        "elasticity of supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q12",
+    "paperId": "2023_ON_P13",
+    "questionNum": 12,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      364,
+      554,
+      456.63
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q12.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      8
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "cross elasticity",
+        "elasticity of demand"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q13",
+    "paperId": "2023_ON_P13",
+    "questionNum": 13,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 5,
+    "bboxPdf": [
+      58,
+      457.63,
+      554,
+      733.64
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q13.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      7,
+      10
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "supply curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q14",
+    "paperId": "2023_ON_P13",
+    "questionNum": 14,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      192.74
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q14.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      10
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "excess demand",
+        "excess supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q15",
+    "paperId": "2023_ON_P13",
+    "questionNum": 15,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      193.74,
+      554,
+      323.67
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q15.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "standard of living"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q16",
+    "paperId": "2023_ON_P13",
+    "questionNum": 16,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      324.67,
+      554,
+      495.52
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q16.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      14
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "progressive tax",
+        "transfer payment"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q17",
+    "paperId": "2023_ON_P13",
+    "questionNum": 17,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 6,
+    "bboxPdf": [
+      58,
+      496.52,
+      554,
+      676.19
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q17.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      16
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 10,
+      "evidence": [
+        "circular flow",
+        "investment",
+        "imports",
+        "taxation"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q18",
+    "paperId": "2023_ON_P13",
+    "questionNum": 18,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      143.53
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q18.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "chapters": [
+      16
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "saving",
+        "investment"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q19",
+    "paperId": "2023_ON_P13",
+    "questionNum": 19,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      144.53,
+      554,
+      322.03
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q19.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      19
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "unemployment",
+        "employment",
+        "frictional"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q20",
+    "paperId": "2023_ON_P13",
+    "questionNum": 20,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      323.03,
+      554,
+      464.87
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q20.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      7,
+      17
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "demand curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q21",
+    "paperId": "2023_ON_P13",
+    "questionNum": 21,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 7,
+    "bboxPdf": [
+      58,
+      465.87,
+      554,
+      670.77
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q21.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "trade in goods"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q22",
+    "paperId": "2023_ON_P13",
+    "questionNum": 22,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      50.96,
+      554,
+      168.92
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q22.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      15
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "national income"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q23",
+    "paperId": "2023_ON_P13",
+    "questionNum": 23,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 8,
+    "bboxPdf": [
+      58,
+      169.92,
+      554,
+      586
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q23.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      20
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "manual_reviewed",
+      "score": 2,
+      "evidence": [
+        "reviewed from extracted question text"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q24",
+    "paperId": "2023_ON_P13",
+    "questionNum": 24,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      52.59,
+      554,
+      267.35
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q24.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      25
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 20,
+      "evidence": [
+        "comparative advantage",
+        "free trade"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q25",
+    "paperId": "2023_ON_P13",
+    "questionNum": 25,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 9,
+    "bboxPdf": [
+      58,
+      268.35,
+      554,
+      406.93
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q25.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "current account",
+        "balance of payments",
+        "current account deficit"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q26",
+    "paperId": "2023_ON_P13",
+    "questionNum": 26,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      472.21
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q26.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "C",
+    "chapters": [
+      17
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "aggregate demand",
+        "aggregate supply",
+        "ad curve"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q27",
+    "paperId": "2023_ON_P13",
+    "questionNum": 27,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 10,
+    "bboxPdf": [
+      58,
+      473.21,
+      554,
+      663.32
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q27.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      24
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 4,
+      "evidence": [
+        "supply side"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q28",
+    "paperId": "2023_ON_P13",
+    "questionNum": 28,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      50.9,
+      554,
+      208.48
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q28.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "chapters": [
+      19
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 24,
+      "evidence": [
+        "employment",
+        "full employment"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q29",
+    "paperId": "2023_ON_P13",
+    "questionNum": 29,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      209.48,
+      554,
+      363.23
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q29.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      22,
+      27
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 8,
+      "evidence": [
+        "budget deficit",
+        "national debt"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
+  },
+  {
+    "id": "2023_ON_P13_Q30",
+    "paperId": "2023_ON_P13",
+    "questionNum": 30,
+    "sourcePdf": "9708_w23_qp_13.pdf",
+    "sourceMarkScheme": "9708_w23_ms_13.pdf",
+    "page": 11,
+    "bboxPdf": [
+      58,
+      364.23,
+      554,
+      526.63
+    ],
+    "stemType": "image",
+    "stemImage": "images/questions/2023_ON_P13/2023_ON_P13_Q30.png",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "D",
+    "chapters": [
+      23
+    ],
+    "explanation": "To be launched in the future.",
+    "classification": {
+      "status": "keyword",
+      "score": 12,
+      "evidence": [
+        "monetary policy",
+        "interest rate",
+        "money supply"
+      ],
+      "needsReview": false
+    },
+    "stemText": null
   }
 ];
 
@@ -9231,6 +15844,238 @@ var AS_PAPER_INDEX = {
       "2024_ON_P13_Q29",
       "2024_ON_P13_Q30"
     ]
+  },
+  "2023_ON_P11": {
+    "id": "2023_ON_P11",
+    "year": "2023",
+    "session": "ON",
+    "paper": "P11",
+    "questionCount": 30,
+    "questions": [
+      "2023_ON_P11_Q01",
+      "2023_ON_P11_Q02",
+      "2023_ON_P11_Q03",
+      "2023_ON_P11_Q04",
+      "2023_ON_P11_Q05",
+      "2023_ON_P11_Q06",
+      "2023_ON_P11_Q07",
+      "2023_ON_P11_Q08",
+      "2023_ON_P11_Q09",
+      "2023_ON_P11_Q10",
+      "2023_ON_P11_Q11",
+      "2023_ON_P11_Q12",
+      "2023_ON_P11_Q13",
+      "2023_ON_P11_Q14",
+      "2023_ON_P11_Q15",
+      "2023_ON_P11_Q16",
+      "2023_ON_P11_Q17",
+      "2023_ON_P11_Q18",
+      "2023_ON_P11_Q19",
+      "2023_ON_P11_Q20",
+      "2023_ON_P11_Q21",
+      "2023_ON_P11_Q22",
+      "2023_ON_P11_Q23",
+      "2023_ON_P11_Q24",
+      "2023_ON_P11_Q25",
+      "2023_ON_P11_Q26",
+      "2023_ON_P11_Q27",
+      "2023_ON_P11_Q28",
+      "2023_ON_P11_Q29",
+      "2023_ON_P11_Q30"
+    ]
+  },
+  "2023_ON_P12": {
+    "id": "2023_ON_P12",
+    "year": "2023",
+    "session": "ON",
+    "paper": "P12",
+    "questionCount": 30,
+    "questions": [
+      "2023_ON_P12_Q01",
+      "2023_ON_P12_Q02",
+      "2023_ON_P12_Q03",
+      "2023_ON_P12_Q04",
+      "2023_ON_P12_Q05",
+      "2023_ON_P12_Q06",
+      "2023_ON_P12_Q07",
+      "2023_ON_P12_Q08",
+      "2023_ON_P12_Q09",
+      "2023_ON_P12_Q10",
+      "2023_ON_P12_Q11",
+      "2023_ON_P12_Q12",
+      "2023_ON_P12_Q13",
+      "2023_ON_P12_Q14",
+      "2023_ON_P12_Q15",
+      "2023_ON_P12_Q16",
+      "2023_ON_P12_Q17",
+      "2023_ON_P12_Q18",
+      "2023_ON_P12_Q19",
+      "2023_ON_P12_Q20",
+      "2023_ON_P12_Q21",
+      "2023_ON_P12_Q22",
+      "2023_ON_P12_Q23",
+      "2023_ON_P12_Q24",
+      "2023_ON_P12_Q25",
+      "2023_ON_P12_Q26",
+      "2023_ON_P12_Q27",
+      "2023_ON_P12_Q28",
+      "2023_ON_P12_Q29",
+      "2023_ON_P12_Q30"
+    ]
+  },
+  "2023_ON_P13": {
+    "id": "2023_ON_P13",
+    "year": "2023",
+    "session": "ON",
+    "paper": "P13",
+    "questionCount": 30,
+    "questions": [
+      "2023_ON_P13_Q01",
+      "2023_ON_P13_Q02",
+      "2023_ON_P13_Q03",
+      "2023_ON_P13_Q04",
+      "2023_ON_P13_Q05",
+      "2023_ON_P13_Q06",
+      "2023_ON_P13_Q07",
+      "2023_ON_P13_Q08",
+      "2023_ON_P13_Q09",
+      "2023_ON_P13_Q10",
+      "2023_ON_P13_Q11",
+      "2023_ON_P13_Q12",
+      "2023_ON_P13_Q13",
+      "2023_ON_P13_Q14",
+      "2023_ON_P13_Q15",
+      "2023_ON_P13_Q16",
+      "2023_ON_P13_Q17",
+      "2023_ON_P13_Q18",
+      "2023_ON_P13_Q19",
+      "2023_ON_P13_Q20",
+      "2023_ON_P13_Q21",
+      "2023_ON_P13_Q22",
+      "2023_ON_P13_Q23",
+      "2023_ON_P13_Q24",
+      "2023_ON_P13_Q25",
+      "2023_ON_P13_Q26",
+      "2023_ON_P13_Q27",
+      "2023_ON_P13_Q28",
+      "2023_ON_P13_Q29",
+      "2023_ON_P13_Q30"
+    ]
+  },
+  "2023_SJ_P11": {
+    "id": "2023_SJ_P11",
+    "year": "2023",
+    "session": "SJ",
+    "paper": "P11",
+    "questionCount": 28,
+    "questions": [
+      "2023_SJ_P11_Q01",
+      "2023_SJ_P11_Q02",
+      "2023_SJ_P11_Q03",
+      "2023_SJ_P11_Q04",
+      "2023_SJ_P11_Q05",
+      "2023_SJ_P11_Q06",
+      "2023_SJ_P11_Q07",
+      "2023_SJ_P11_Q08",
+      "2023_SJ_P11_Q09",
+      "2023_SJ_P11_Q10",
+      "2023_SJ_P11_Q11",
+      "2023_SJ_P11_Q12",
+      "2023_SJ_P11_Q13",
+      "2023_SJ_P11_Q14",
+      "2023_SJ_P11_Q15",
+      "2023_SJ_P11_Q16",
+      "2023_SJ_P11_Q17",
+      "2023_SJ_P11_Q18",
+      "2023_SJ_P11_Q19",
+      "2023_SJ_P11_Q20",
+      "2023_SJ_P11_Q21",
+      "2023_SJ_P11_Q23",
+      "2023_SJ_P11_Q24",
+      "2023_SJ_P11_Q25",
+      "2023_SJ_P11_Q26",
+      "2023_SJ_P11_Q27",
+      "2023_SJ_P11_Q28",
+      "2023_SJ_P11_Q29"
+    ]
+  },
+  "2023_SJ_P12": {
+    "id": "2023_SJ_P12",
+    "year": "2023",
+    "session": "SJ",
+    "paper": "P12",
+    "questionCount": 30,
+    "questions": [
+      "2023_SJ_P12_Q01",
+      "2023_SJ_P12_Q02",
+      "2023_SJ_P12_Q03",
+      "2023_SJ_P12_Q04",
+      "2023_SJ_P12_Q05",
+      "2023_SJ_P12_Q06",
+      "2023_SJ_P12_Q07",
+      "2023_SJ_P12_Q08",
+      "2023_SJ_P12_Q09",
+      "2023_SJ_P12_Q10",
+      "2023_SJ_P12_Q11",
+      "2023_SJ_P12_Q12",
+      "2023_SJ_P12_Q13",
+      "2023_SJ_P12_Q14",
+      "2023_SJ_P12_Q15",
+      "2023_SJ_P12_Q16",
+      "2023_SJ_P12_Q17",
+      "2023_SJ_P12_Q18",
+      "2023_SJ_P12_Q19",
+      "2023_SJ_P12_Q20",
+      "2023_SJ_P12_Q21",
+      "2023_SJ_P12_Q22",
+      "2023_SJ_P12_Q23",
+      "2023_SJ_P12_Q24",
+      "2023_SJ_P12_Q25",
+      "2023_SJ_P12_Q26",
+      "2023_SJ_P12_Q27",
+      "2023_SJ_P12_Q28",
+      "2023_SJ_P12_Q29",
+      "2023_SJ_P12_Q30"
+    ]
+  },
+  "2023_SJ_P13": {
+    "id": "2023_SJ_P13",
+    "year": "2023",
+    "session": "SJ",
+    "paper": "P13",
+    "questionCount": 30,
+    "questions": [
+      "2023_SJ_P13_Q01",
+      "2023_SJ_P13_Q02",
+      "2023_SJ_P13_Q03",
+      "2023_SJ_P13_Q04",
+      "2023_SJ_P13_Q05",
+      "2023_SJ_P13_Q06",
+      "2023_SJ_P13_Q07",
+      "2023_SJ_P13_Q08",
+      "2023_SJ_P13_Q09",
+      "2023_SJ_P13_Q10",
+      "2023_SJ_P13_Q11",
+      "2023_SJ_P13_Q12",
+      "2023_SJ_P13_Q13",
+      "2023_SJ_P13_Q14",
+      "2023_SJ_P13_Q15",
+      "2023_SJ_P13_Q16",
+      "2023_SJ_P13_Q17",
+      "2023_SJ_P13_Q18",
+      "2023_SJ_P13_Q19",
+      "2023_SJ_P13_Q20",
+      "2023_SJ_P13_Q21",
+      "2023_SJ_P13_Q22",
+      "2023_SJ_P13_Q23",
+      "2023_SJ_P13_Q24",
+      "2023_SJ_P13_Q25",
+      "2023_SJ_P13_Q26",
+      "2023_SJ_P13_Q27",
+      "2023_SJ_P13_Q28",
+      "2023_SJ_P13_Q29",
+      "2023_SJ_P13_Q30"
+    ]
   }
 };
 
@@ -9267,37 +16112,37 @@ var AS_CHAPTER_DEFINITIONS = {
 };
 
 var AS_VALIDATION_REPORT = {
-  "totalQuestions": 240,
-  "paperCount": 8,
+  "totalQuestions": 418,
+  "paperCount": 14,
   "chapterCounts": {
-    "1": 5,
+    "1": 14,
     "2": 4,
-    "3": 10,
-    "4": 0,
-    "5": 12,
-    "6": 12,
-    "7": 20,
-    "8": 12,
-    "9": 8,
-    "10": 5,
-    "11": 10,
-    "12": 1,
-    "13": 7,
-    "14": 6,
-    "15": 10,
-    "16": 14,
-    "17": 9,
-    "18": 1,
-    "19": 18,
-    "20": 6,
+    "3": 17,
+    "4": 3,
+    "5": 19,
+    "6": 19,
+    "7": 54,
+    "8": 26,
+    "9": 13,
+    "10": 13,
+    "11": 15,
+    "12": 2,
+    "13": 17,
+    "14": 12,
+    "15": 21,
+    "16": 24,
+    "17": 19,
+    "18": 3,
+    "19": 25,
+    "20": 15,
     "21": 0,
-    "22": 17,
-    "23": 5,
-    "24": 5,
-    "25": 8,
-    "26": 6,
-    "27": 18,
-    "28": 11,
+    "22": 23,
+    "23": 11,
+    "24": 8,
+    "25": 12,
+    "26": 8,
+    "27": 32,
+    "28": 15,
     "29": 0
   },
   "needsReview": [],
@@ -9307,5 +16152,9 @@ var AS_VALIDATION_REPORT = {
   "missingAnswers": [],
   "missingChapters": [],
   "missingOptions": [],
-  "rootRelativePaths": []
+  "rootRelativePaths": [],
+  "excludedNoOfficialAnswer": [
+    "2023_SJ_P11_Q22",
+    "2023_SJ_P11_Q30"
+  ]
 };

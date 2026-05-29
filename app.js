@@ -9,10 +9,12 @@
 const EXPLANATION_PLACEHOLDER = 'To be launched in the future.';
 const IMAGE_PLACEHOLDER_SRC = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 const CURRENT_CHANGELOG = {
-  version: 'v0.8.1',
-  date: '2026.05.29',
+  version: 'v0.8.2',
+  date: '2026.05.30',
   title: 'Economics MCQ Platform Updated',
   added: [
+    'Added new AS Economics past paper questions.',
+    'Expanded the AS question bank with more Paper 1 practice.',
     'Automatic progress saving.',
     'Your progress is now saved instantly as you answer questions.',
     'Progress is restored automatically when you return to the platform.'
