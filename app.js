@@ -9,24 +9,23 @@
 const EXPLANATION_PLACEHOLDER = 'To be launched in the future.';
 const IMAGE_PLACEHOLDER_SRC = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 const CURRENT_CHANGELOG = {
-  version: 'v0.9.0',
+  version: 'v0.9.1',
   date: '2026.05.30',
-  title: 'Major Interface Redesign & Syllabus Selection',
+  title: 'Random Practice Redesign & Platform Refinements',
   added: [
     'Added a syllabus selection landing page for choosing between AS Level and A Level Economics.',
-    'Added new AS Economics past paper questions.',
-    'Expanded the AS question bank with more Paper 1 practice.',
     'Automatic progress saving.',
     'Your progress is now saved instantly as you answer questions.',
     'Progress is restored automatically when you return to the platform.'
   ],
-  fixed: [],
+  fixed: [
+    'Multiple bug fixes and stability improvements.'
+  ],
   improved: [
-    'Redesigned the user interface with a cleaner and more polished visual experience.',
-    'Improved overall navigation flow and user experience.',
-    'Smoother study experience with fewer interruptions.',
-    'Reduced risk of losing progress during practice sessions.',
-    'Improved overall usability and workflow.'
+    'Redesigned Random Practice Mode for a more engaging learning experience.',
+    'Improved the dashboard layout and overall user experience.',
+    'Refined the syllabus selection workflow.',
+    'Enhanced UI consistency across the platform.'
   ]
 };
 
@@ -196,7 +195,7 @@ const App = {
     const map = {
       'home': '[data-view="home"]', 'chapter-select': '[data-view="chapter-select"]',
       'paper-select': '[data-view="paper-select"]', 'random-practice': '[data-view="random-practice"]',
-      'wrong-book': '[data-view="wrong-book"]', 'bookmarks': '[data-view="bookmarks"]',
+      'wrong-book': '[data-view="wrong-book"]', 'bookmarks': '[data-view="bookmarks"]', 'random-complete': '[data-view="random-complete"]',
       'stats': '[data-view="stats"]', 'search': '[data-view="search"]'
     };
     const sel = map[view];
@@ -223,7 +222,7 @@ const App = {
       'practice': () => UIRenderer.renderPractice(),
       'random-practice': () => UIRenderer.renderRandomSetup(),
       'wrong-book': () => UIRenderer.renderWrongBook(),
-      'bookmarks': () => UIRenderer.renderBookmarks(),
+      'bookmarks': () => UIRenderer.renderBookmarks(), 'random-complete': () => App.renderRandomComplete(),
       'stats': () => UIRenderer.renderStats(),
       'search': () => UIRenderer.renderSearch(),
       'settings': () => UIRenderer.renderSettings()
@@ -775,8 +774,18 @@ const App = {
     }
     this.clearSessionState();
     this.updateBadges();
-    this.navigate('home');
-    this.showToast('Attempt completed.');
+    if (this.currentMode === 'random') {
+      this.randomCompletionData = {
+        answered: progress.answered,
+        correct: progress.correct,
+        accuracy: progress.accuracy,
+        wrongAdded: progress.incorrect || 0
+      };
+      this.navigate('random-complete');
+    } else {
+      this.navigate('home');
+      this.showToast('Attempt completed.');
+    }
   },
 
   getRelativeTimeLabel(timestamp) {
@@ -1514,21 +1523,79 @@ const UIRenderer = {
   },
 
   renderRandomSetup() {
-    let cbs = '';
-    const sorted = Object.keys(App._chapters()).map(Number).sort((a, b) => a - b);
+    const totalAvailable = App._qData().length;
+    const wrongIds = Storage.getWrongQuestions();
+    const bookmarkIds = Storage.getBookmarks();
+    const wrongAvailable = QuestionBank.getByIds(wrongIds).length;
+    const bookmarkAvailable = QuestionBank.getByIds(bookmarkIds).length;
+    const wrongSaved = wrongIds.length;
+
+    // Use overall stats for session summary
+    const allStats = Storage.getAllChapterStats();
+    let overallAnswered = 0, overallCorrect = 0;
+    const sorted = Object.keys(App._chapters()).map(Number);
     for (const ch of sorted) {
-      cbs += '<label style="display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;padding:4px 0;cursor:pointer;"><input type="checkbox" value="' + ch + '" class="random-ch-cb" style="accent-color:var(--accent);"> Ch ' + ch + '</label>';
+      const s = allStats[ch];
+      if (s) { overallAnswered += s.answered || 0; overallCorrect += s.correct || 0; }
     }
-    return '<div class="page-header"><h2>Random Practice Mode</h2><p>Configure your random question session</p></div>' +
-      '<div class="card" style="max-width:600px;">' +
-      '<div style="margin-bottom:16px;"><label style="display:block;font-weight:600;margin-bottom:6px;">Number of Questions</label><select id="randomCount" class="select-input" style="width:100%;"><option value="5">5 questions</option><option value="10" selected>10 questions</option><option value="20">20 questions</option><option value="30">30 questions</option></select></div>' +
-      '<div style="margin-bottom:16px;"><label style="display:block;font-weight:600;margin-bottom:6px;">Filter by Chapters (optional)</label><div style="display:flex;flex-wrap:wrap;gap:8px;max-height:200px;overflow-y:auto;">' + cbs + '</div><button class="btn btn-sm mt-8" onclick="document.querySelectorAll(\'.random-ch-cb\').forEach(cb=>cb.checked=false)">Clear All</button></div>' +
-      '<button class="btn btn-primary" onclick="RandomMode.start()">Start Random Practice</button></div>';
+    const overallAccuracy = overallAnswered > 0 ? Math.round((overallCorrect / overallAnswered) * 100) : 0;
+
+    return '<div class="random-dashboard">' +
+      '<div class="page-header"><h2>Random Practice</h2><p>Sharpen your Economics knowledge with custom practice sessions</p></div>' +
+
+      '<div class="setup-card">' +
+        '<span class="setup-card-label">Number of Questions</span>' +
+        '<div class="count-options">' +
+          '<div class="count-option"><input type="radio" name="randomCount" value="10" id="rc10" checked><label for="rc10">10</label></div>' +
+          '<div class="count-option"><input type="radio" name="randomCount" value="20" id="rc20"><label for="rc20">20</label></div>' +
+          '<div class="count-option"><input type="radio" name="randomCount" value="30" id="rc30"><label for="rc30">30</label></div>' +
+          '<div class="count-option"><input type="radio" name="randomCount" value="50" id="rc50"><label for="rc50">50</label></div>' +
+          '<div class="count-option"><input type="radio" name="randomCount" value="all" id="rcAll"><label for="rcAll">All (' + totalAvailable + ')</label></div>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="setup-card">' +
+        '<span class="setup-card-label">Difficulty Mix</span>' +
+        '<div class="difficulty-options">' +
+          '<div class="diff-option"><input type="radio" name="randomDiff" value="mixed" id="rdMixed" checked><label for="rdMixed"><span class="diff-dot mixed"></span> Mixed</label></div>' +
+          '<div class="diff-option"><input type="radio" name="randomDiff" value="easy" id="rdEasy" disabled><label for="rdEasy" style="opacity:0.45;cursor:default;" title="Difficulty data not available"><span class="diff-dot easy"></span> Easy</label></div>' +
+          '<div class="diff-option"><input type="radio" name="randomDiff" value="medium" id="rdMed" disabled><label for="rdMed" style="opacity:0.45;cursor:default;" title="Difficulty data not available"><span class="diff-dot medium"></span> Medium</label></div>' +
+          '<div class="diff-option"><input type="radio" name="randomDiff" value="hard" id="rdHard" disabled><label for="rdHard" style="opacity:0.45;cursor:default;" title="Difficulty data not available"><span class="diff-dot hard"></span> Hard</label></div>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="setup-card">' +
+        '<span class="setup-card-label">Topic Scope</span>' +
+        '<div class="scope-options">' +
+          '<div class="scope-option"><input type="radio" name="randomScope" value="all" id="rsAll" checked><label for="rsAll"><span class="scope-icon">📚</span><span class="scope-title">All Topics</span><span class="scope-count">' + totalAvailable + ' questions</span></label></div>' +
+          '<div class="scope-option"><input type="radio" name="randomScope" value="wrong" id="rsWrong" ' + (wrongAvailable === 0 ? 'disabled' : '') + '><label for="rsWrong" ' + (wrongAvailable === 0 ? 'style="opacity:0.45;cursor:default;"' : '') + '><span class="scope-icon">❌</span><span class="scope-title">Previously Incorrect</span><span class="scope-count">' + wrongAvailable + ' questions</span></label></div>' +
+          '<div class="scope-option"><input type="radio" name="randomScope" value="bookmark" id="rsBookmark" ' + (bookmarkAvailable === 0 ? 'disabled' : '') + '><label for="rsBookmark" ' + (bookmarkAvailable === 0 ? 'style="opacity:0.45;cursor:default;"' : '') + '><span class="scope-icon">🔖</span><span class="scope-title">Bookmarked</span><span class="scope-count">' + bookmarkAvailable + ' questions</span></label></div>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="summary-card">' +
+        '<div class="summary-card-header">Session Summary</div>' +
+        '<div class="summary-stats-grid">' +
+          '<div class="summary-stat"><span class="summary-stat-value">' + totalAvailable + '</span><span class="summary-stat-label">Total Questions</span></div>' +
+          '<div class="summary-stat"><span class="summary-stat-value">' + overallAnswered + '</span><span class="summary-stat-label">Questions Done</span></div>' +
+          '<div class="summary-stat"><span class="summary-stat-value">' + overallAccuracy + '%</span><span class="summary-stat-label">Overall Accuracy</span></div>' +
+          '<div class="summary-stat"><span class="summary-stat-value">' + wrongSaved + '</span><span class="summary-stat-label">Wrong Qs Saved</span></div>' +
+        '</div>' +
+      '</div>' +
+
+      '<button class="random-start-btn" onclick="RandomMode.startFromDashboard()">Start Practice Session</button>' +
+
+    '</div>';
   },
 
   renderPractice() {
     const q = App.getCurrentQuestion();
-    if (!q) return '<div class="empty-state"><div class="icon-big">✅</div><h3>Session Complete</h3></div>';
+    if (!q) {
+      if (App.currentMode === 'random' && App.randomCompletionData) {
+        return App.renderRandomComplete();
+      }
+      return '<div class="empty-state"><div class="icon-big">✅</div><h3>Session Complete</h3></div>';
+    }
 
     const isReview = App.sessionViewMode === 'review';
     const isLocked = isReview ? true : (App.sessionLocked[q.id] || false);
@@ -1592,7 +1659,18 @@ const UIRenderer = {
       ? (App.hasUnsavedChanges ? 'Saving automatically...' : 'All progress saved')
       : 'Reviewing completed attempt';
 
-    return '<div class="practice-controls"><div><span class="progress-info" id="progressText">Question <strong>' + (App.sessionIndex + 1) + '</strong> of <strong>' + totalQ + '</strong> &middot; ' + answeredCount + ' answered</span><div class="card-subtitle auto-save-status" id="autoSaveStatus" title="Last saved ' + App.getRelativeTimeLabel(lastSavedAt) + '">' + saveMeta + '</div></div>' +
+    // Random mode session bar
+    var randomSessionBar = '';
+    if (App.currentMode === 'random') {
+      var rprog = App.calculateSessionProgress(App.sessionQuestions.map(function(item) { return item.id; }), App.sessionAnswers, App.sessionResults);
+      var remaining = rprog.total - rprog.answered;
+      randomSessionBar = '<div class="random-session-bar">' +
+        '<div class="random-session-stat"><span class="stat-icon">📊</span><span>Session Progress: <strong>' + rprog.answered + '/' + rprog.total + '</strong></span></div>' +
+        '<div class="random-session-stat"><span class="stat-icon">⏳</span><span>Remaining: <strong>' + remaining + '</strong></span></div>' +
+        '<div class="random-session-stat"><span class="stat-icon">🎯</span><span>Accuracy: <strong>' + rprog.accuracy + '%</strong></span></div>' +
+      '</div>';
+    }
+    return randomSessionBar + '<div class="practice-controls"><div><span class="progress-info" id="progressText">Question <strong>' + (App.sessionIndex + 1) + '</strong> of <strong>' + totalQ + '</strong> &middot; ' + answeredCount + ' answered</span><div class="card-subtitle auto-save-status" id="autoSaveStatus" title="Last saved ' + App.getRelativeTimeLabel(lastSavedAt) + '">' + saveMeta + '</div></div>' +
       '<div style="display:flex;align-items:center;gap:12px;"><button class="bookmark-toggle ' + (isBookmarked ? 'active' : '') + '" id="bookmarkBtn" onclick="Bookmarks.toggle(\'' + q.id + '\')">' + (isBookmarked ? '🔖' : '🔖') + '</button>' + timerHTML +
       (App.sessionViewMode === 'active' ? '<button class="btn btn-sm btn-outline" onclick="App.saveAndExit()">Exit</button>' : '<button class="btn btn-sm btn-outline" onclick="App.navigate(\'home\')">← Exit Review</button>') + '</div></div>' +
       '<div class="question-card"><div class="question-meta"><span style="font-weight:700;">Q' + q.questionNum + '</span><span style="color:var(--text-muted);">' + q.paperId + '</span>' + chapterTags + '</div>' +
@@ -1608,6 +1686,26 @@ const UIRenderer = {
             : '<button class="btn btn-primary" id="btnNext" onclick="App.nextQuestion()">Next →</button>')
           : '<button class="btn btn-primary" id="btnNext" onclick="App.nextQuestion()" ' + (App.sessionIndex >= totalQ - 1 ? 'disabled' : '') + '>Next →</button>') +
       '</div>' + paletteHTML;
+  },
+
+  renderRandomComplete() {
+    var d = App.randomCompletionData || { answered: 0, correct: 0, accuracy: 0, wrongAdded: 0 };
+    var wrongQsCount = Storage.getWrongQuestions().length;
+    var emoji = d.accuracy >= 80 ? '🎉' : (d.accuracy >= 50 ? '👍' : '💪');
+    return '<div class="completion-screen">' +
+      '<div class="completion-icon">' + emoji + '</div>' +
+      '<h2>Session Complete</h2>' +
+      '<p class="completion-subtitle">Great work! Here\'s how you did.</p>' +
+      '<div class="completion-stats">' +
+        '<div class="completion-stat-card"><div class="completion-stat-value">' + d.answered + '</div><div class="completion-stat-label">Questions Answered</div></div>' +
+        '<div class="completion-stat-card"><div class="completion-stat-value">' + d.accuracy + '%</div><div class="completion-stat-label">Accuracy</div></div>' +
+        '<div class="completion-stat-card"><div class="completion-stat-value">' + d.wrongAdded + '</div><div class="completion-stat-label">Wrong Qs Added</div></div>' +
+      '</div>' +
+      '<div class="completion-actions">' +
+        '<button class="btn btn-outline" onclick="App.navigate(\'random-practice\')">Retry Session</button>' +
+        '<button class="btn btn-primary" onclick="App.navigate(\'home\')">Back to Dashboard</button>' +
+      '</div>' +
+    '</div>';
   },
 
   renderWrongBook() {
@@ -1794,16 +1892,42 @@ const PaperMode = {
 // RANDOM MODE
 // ========================================================
 const RandomMode = {
-  start: function() {
-    const ce = document.getElementById('randomCount');
-    const count = ce ? parseInt(ce.value) : 10;
-    const sc = [];
-    document.querySelectorAll('.random-ch-cb:checked').forEach(function(cb) { sc.push(parseInt(cb.value)); });
-    const questions = QuestionBank.getRandom(count, sc);
+  startFromDashboard: function() {
+    var countEl = document.querySelector('input[name="randomCount"]:checked');
+    var countVal = countEl ? countEl.value : '10';
+    var count = countVal === 'all' ? null : parseInt(countVal);
+
+    var scopeEl = document.querySelector('input[name="randomScope"]:checked');
+    var scope = scopeEl ? scopeEl.value : 'all';
+
+    var pool;
+    if (scope === 'wrong') {
+      pool = QuestionBank.getByIds(Storage.getWrongQuestions());
+    } else if (scope === 'bookmark') {
+      pool = QuestionBank.getByIds(Storage.getBookmarks());
+    } else {
+      pool = App._qData();
+    }
+
+    if (pool.length === 0) {
+      App.showToast('No questions available for this scope.');
+      return;
+    }
+
+    var shuffled = pool.slice();
+    for (var i = shuffled.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = shuffled[i]; shuffled[i] = shuffled[j]; shuffled[j] = tmp;
+    }
+    var finalCount = count !== null ? Math.min(count, shuffled.length) : shuffled.length;
+    var questions = shuffled.slice(0, finalCount);
     App.startSession(questions, 'random');
+  },
+
+  start: function() {
+    this.startFromDashboard();
   }
 };
-
 
 // ========================================================
 // WRONG BOOK
