@@ -9,10 +9,11 @@
 const EXPLANATION_PLACEHOLDER = 'To be launched in the future.';
 const IMAGE_PLACEHOLDER_SRC = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 const CURRENT_CHANGELOG = {
-  version: 'v0.8.2',
+  version: 'v0.9.0',
   date: '2026.05.30',
-  title: 'Economics MCQ Platform Updated',
+  title: 'Major Interface Redesign & Syllabus Selection',
   added: [
+    'Added a syllabus selection landing page for choosing between AS Level and A Level Economics.',
     'Added new AS Economics past paper questions.',
     'Expanded the AS question bank with more Paper 1 practice.',
     'Automatic progress saving.',
@@ -21,6 +22,8 @@ const CURRENT_CHANGELOG = {
   ],
   fixed: [],
   improved: [
+    'Redesigned the user interface with a cleaner and more polished visual experience.',
+    'Improved overall navigation flow and user experience.',
     'Smoother study experience with fewer interruptions.',
     'Reduced risk of losing progress during practice sessions.',
     'Improved overall usability and workflow.'
@@ -31,6 +34,7 @@ const CURRENT_CHANGELOG = {
 // GLOBAL APP STATE
 // ========================================================
 const App = {
+  hasEnteredSyllabus: false,
   currentSyllabus: 'a2',
   currentView: 'home',
   currentMode: null,
@@ -75,6 +79,7 @@ const App = {
   setSyllabus(syllabus) {
     if (this.currentSyllabus === syllabus) return;
     this.currentSyllabus = syllabus;
+    this._updateSidebarLabel();
     this.sessionQuestions = [];
     this.sessionAnswers = {};
     this.sessionResults = {};
@@ -83,9 +88,6 @@ const App = {
     this.currentChapter = null;
     this.currentPaperId = null;
     this.currentView = 'home';
-    document.querySelectorAll('[data-syllabus]').forEach(function(el) {
-      el.classList.toggle('active', el.dataset.syllabus === syllabus);
-    });
     this.updateBadges();
     this.renderView('home');
   },
@@ -96,11 +98,9 @@ const App = {
     Storage.migrateLegacyData();
     this.applyTheme();
     this.updateBadges();
-    this.renderView('home');
-    // Highlight A2 syllabus button on init
-    document.querySelectorAll('[data-syllabus]').forEach(function(el) {
-      el.classList.toggle('active', el.dataset.syllabus === 'a2');
-    });
+    // Start on landing page — sidebar hidden
+    document.getElementById('appLayout').classList.add('landing');
+    this.renderView('landing');
     this.registerSW();
     UpdateNotes.init();
   },
@@ -147,6 +147,46 @@ const App = {
     document.getElementById('appLayout').classList.remove('sidebar-open');
   },
 
+  _updateSidebarLabel() {
+    var label = document.getElementById('sidebarSyllabusLabel');
+    if (label) label.textContent = this.currentSyllabus === 'as' ? 'AS Level' : 'A Level';
+  },
+
+
+  enterSyllabus(syllabus) {
+    this.hasEnteredSyllabus = true;
+    this.currentSyllabus = syllabus;
+    this._updateSidebarLabel();
+    document.getElementById('appLayout').classList.remove('landing');
+    this.sessionQuestions = [];
+    this.sessionAnswers = {};
+    this.sessionResults = {};
+    this.sessionLocked = {};
+    this.sessionIndex = 0;
+    this.currentChapter = null;
+    this.currentPaperId = null;
+    this.currentView = 'home';
+    this.updateBadges();
+    this.renderView('home');
+  },
+
+  goBackToLanding() {
+    if (this.sessionViewMode === 'active' && this.currentMode) this.saveSession();
+    this.hasEnteredSyllabus = false;
+    this.sessionQuestions = [];
+    this.sessionAnswers = {};
+    this.sessionResults = {};
+    this.sessionLocked = {};
+    this.sessionIndex = 0;
+    this.currentChapter = null;
+    this.currentPaperId = null;
+    this.currentMode = null;
+    this.currentContextKey = null;
+    this.currentView = 'landing';
+    document.getElementById('appLayout').classList.add('landing');
+    if (this.timerActive) this.stopTimer();
+    this.renderView('landing');
+  },
   navigate(view, params = {}) {
     this.currentView = view;
     this.closeSidebar();
@@ -168,8 +208,12 @@ const App = {
   renderView(view, params = {}) {
     const wrapper = document.getElementById('contentWrapper');
     if (!wrapper) return;
+    if (view === 'landing') {
+      wrapper.innerHTML = UIRenderer.renderLanding();
+      return;
+    }
     if (this._isEmpty() && view !== 'settings') {
-      wrapper.innerHTML = '<div class="page-header"><h2>&#x1F4D8; AS Economics</h2><p>Coming Soon</p></div><div class="empty-state"><div class="empty-icon">&#x1F6A7;</div><div class="empty-title">AS Economics Content Not Yet Available</div><div class="empty-text">We are working on adding AS Economics questions. Please check back later, or switch to A2 Economics for full practice access.</div><div class="empty-action"><button class="btn btn-primary" onclick="App.setSyllabus(\'a2\')">Switch to A2 Economics</button></div></div>';
+      wrapper.innerHTML = '<div class="page-header"><h2>&#x1F4D8; AS Economics</h2><p>Coming Soon</p></div><div class="empty-state"><div class="empty-icon">&#x1F6A7;</div><div class="empty-title">AS Economics Content Not Yet Available</div><div class="empty-text">We are working on adding AS Economics questions. Please check back later, or switch to A2 Economics for full practice access.</div><div class="empty-action"><button class="btn btn-primary" onclick="App.enterSyllabus(\'a2\')">Switch to A2 Economics</button></div></div>';
       return;
     }
     const views = {
@@ -1296,6 +1340,30 @@ const QuestionBank = {
 // UI RENDERER
 // ========================================================
 const UIRenderer = {
+  renderLanding() {
+    return '<div class="landing-page">' +
+      '<div class="landing-hero">' +
+        '<h1>CIE Economics MCQ</h1>' +
+        '<p class="landing-subtitle">Cambridge International AS &amp; A Level Economics</p>' +
+      '</div>' +
+      '<div class="syllabus-cards">' +
+        '<div class="syllabus-card" onclick="App.enterSyllabus(\'as\')">' +
+          '<div class="syllabus-card-icon">&#x1F4D8;</div>' +
+          '<h2 class="syllabus-card-title">AS Economics</h2>' +
+          '<p class="syllabus-card-subtitle">Cambridge 9708 AS Level</p>' +
+          '<div class="syllabus-card-action"><span>Enter AS Economics &rarr;</span></div>' +
+        '</div>' +
+        '<div class="syllabus-card" onclick="App.enterSyllabus(\'a2\')">' +
+          '<div class="syllabus-card-icon">&#x1F393;</div>' +
+          '<h2 class="syllabus-card-title">A2 Economics</h2>' +
+          '<p class="syllabus-card-subtitle">Cambridge 9708 A2 Level</p>' +
+          '<div class="syllabus-card-action"><span>Enter A2 Economics &rarr;</span></div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="landing-footer">Built by Cherry, an Economics Student</div>' +
+    '</div>';
+  },
+
   escapeAttr(value) {
     return String(value).replace(/\\/g, '\\\\').replace(/'/g, '\\\'');
   },
@@ -1347,24 +1415,53 @@ const UIRenderer = {
     });
     const oa = tQ > 0 ? Math.round((cQ / tQ) * 100) : 0;
     const wc = Storage.getWrongQuestions().length;
+    const bc = Storage.getBookmarks().length;
+    const totalQ = App._qData().length;
+    const progressPct = totalCh > 0 ? Math.round((practiced / totalCh) * 100) : 0;
+    const greeting = tQ > 0 ? 'Welcome Back' : 'Welcome';
+    const subtitle = tQ > 0 ? 'Continue building your Economics mastery.' : 'Start your Economics practice journey.';
 
-    return '<div class="page-header"><h2>Dashboard</h2><p>Cambridge International A Level Economics &mdash; Paper 1 MCQ Practice</p></div>' +
-      '<div class="stats-grid">' +
-        '<div class="stat-card"><div class="stat-value">' + tQ + '</div><div class="stat-label">Questions Attempted</div></div>' +
-        '<div class="stat-card"><div class="stat-value">' + oa + '%</div><div class="stat-label">Overall Accuracy</div></div>' +
-        '<div class="stat-card"><div class="stat-value">' + practiced + '</div><div class="stat-label">Completed Contexts</div></div>' +
-        '<div class="stat-card"><div class="stat-value">' + inProgress + '</div><div class="stat-label">Active Sessions</div></div>' +
+    return '<div class="db-welcome"><h2>' + greeting + '</h2><p>' + subtitle + '</p></div>' +
+
+      // --- Hero Progress Card ---
+      '<div class="db-hero">' +
+        '<div class="db-hero-header"><h3>Your Progress</h3><span class="db-hero-badge">' + progressPct + '% Complete</span></div>' +
+        '<div class="db-hero-progress"><div class="db-hero-bar"><div class="db-hero-fill" style="width:' + progressPct + '%"></div></div></div>' +
+        '<div class="db-hero-stats">' +
+          '<div class="db-hero-stat"><span class="db-hero-stat-value">' + tQ + '</span><span class="db-hero-stat-label">Questions Done</span></div>' +
+          '<div class="db-hero-stat"><span class="db-hero-stat-value">' + oa + '%</span><span class="db-hero-stat-label">Accuracy</span></div>' +
+          '<div class="db-hero-stat"><span class="db-hero-stat-value">' + wc + '</span><span class="db-hero-stat-label">Wrong Qs</span></div>' +
+          '<div class="db-hero-stat"><span class="db-hero-stat-value">' + practiced + '/' + totalCh + '</span><span class="db-hero-stat-label">Chapters</span></div>' +
+        '</div>' +
       '</div>' +
-      '<div class="card-grid mt-24">' +
-        '<div class="card" onclick="App.navigate(\'chapter-select\')"><div class="card-header"><span class="card-title">📚 Practice by Chapter</span></div><div class="card-subtitle">Study specific topics with chapter-by-chapter tracking</div><div class="progress-bar"><div class="progress-fill" style="width:' + Math.round((Object.keys(Storage.getAllContextRecords('chapter:')).length/Math.max(1,totalCh))*100) + '%"></div></div></div>' +
-        '<div class="card" onclick="App.navigate(\'paper-select\')"><div class="card-header"><span class="card-title">📄 Practice by Past Paper</span></div><div class="card-subtitle">Complete full past papers under exam conditions</div></div>' +
-        '<div class="card" onclick="App.navigate(\'random-practice\')"><div class="card-header"><span class="card-title">🎲 Random Practice</span></div><div class="card-subtitle">Mixed questions from all chapters to test your knowledge</div></div>' +
-      '<div class="card" onclick="App.navigate(\'wrong-book\')"><div class="card-header"><span class="card-title">❌ Wrong Question Review</span></div><div class="card-subtitle">Retry questions you got wrong until you master them</div></div>' +
-      '<div class="card" onclick="App.navigate(\'stats\')"><div class="card-header"><span class="card-title">📈 Progress Overview</span></div><div class="card-subtitle">' + wc + ' wrong questions saved for review</div></div>' +
-      '</div>';
-  },
 
-  renderChapterSelect() {
+      // --- Quick Start ---
+      '<div class="db-section-label">Quick Start</div>' +
+      '<div class="db-quickstart">' +
+        '<div class="db-quick-card" onclick="App.navigate(\'chapter-select\')">' +
+          '<div class="db-quick-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-9a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></div>' +
+          '<div class="db-quick-card-text"><span class="db-quick-card-title">Practice by Chapter</span><span class="db-quick-card-sub">Study specific topics</span></div>' +
+        '</div>' +
+        '<div class="db-quick-card" onclick="App.navigate(\'paper-select\')">' +
+          '<div class="db-quick-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></div>' +
+          '<div class="db-quick-card-text"><span class="db-quick-card-title">Practice by Past Paper</span><span class="db-quick-card-sub">Exam conditions</span></div>' +
+        '</div>' +
+        '<div class="db-quick-card" onclick="App.navigate(\'random-practice\')">' +
+          '<div class="db-quick-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 4 3 3-3 3"/><path d="m18 20 3-3-3-3"/><path d="M3 7h3a5 5 0 0 1 5 5 5 5 0 0 0 5 5h5"/><path d="M21 7h-5a4.978 4.978 0 0 0-3 1"/></svg></div>' +
+          '<div class="db-quick-card-text"><span class="db-quick-card-title">Random Mode</span><span class="db-quick-card-sub">Mixed questions</span></div>' +
+        '</div>' +
+      '</div>' +
+
+      // --- Learning Summary ---
+      '<div class="db-section-label">Learning Summary</div>' +
+      '<div class="db-summary">' +
+        '<div class="db-summary-item"><span class="db-summary-value">' + tQ + '</span><span class="db-summary-label">Attempted</span></div>' +
+        '<div class="db-summary-item"><span class="db-summary-value">' + Math.max(0, totalQ - tQ) + '</span><span class="db-summary-label">Remaining</span></div>' +
+        '<div class="db-summary-item"><span class="db-summary-value">' + oa + '%</span><span class="db-summary-label">Accuracy</span></div>' +
+        '<div class="db-summary-item"><span class="db-summary-value">' + wc + '</span><span class="db-summary-label">Wrong Qs</span></div>' +
+        '<div class="db-summary-item"><span class="db-summary-value">' + bc + '</span><span class="db-summary-label">Bookmarked</span></div>' +
+      '</div>';
+  },  renderChapterSelect() {
     let cards = '';
     const sorted = Object.keys(App._chapters()).map(Number).sort((a, b) => a - b);
     for (const ch of sorted) {
